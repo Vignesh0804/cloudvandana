@@ -1,0 +1,45 @@
+body{
+    margin-top: 10%;
+    margin-left: 40%;
+    background-color: black;
+}
+h2{
+    color: antiquewhite;
+}
+h2:hover{
+    text-decoration:underline;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+input
+{
+    width: 19.75%;
+    height: 50px;
+    font-size:medium;
+    text-align: end;
+}
+
+#equal{
+    background-color:darkturquoise;
+}
+#ac{
+    background-color:darkturquoise;
+    
+}
+#add{
+    background-color: grey;
+}
+#di{
+    background-color: grey;
+}
+#multi
+{
+    background-color: grey;
+}
+#sub{
+    background-color: grey;
+}
