@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html l>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    
+    <form id="myform" name="form">
+        <h1> SURVEY FORM</h1>
+        <div class="input-controls">
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="Enter your first name ">
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls">
+            <label>Last Name</label>
+            <input type="text" id="lname"  placeholder="Enter your last name" >
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls">
+            <label>Date of Birth</label>
+            <input type="date" id="date" >
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls">
+            <label for="county">Country</label>
+            <select id="country">
+                <option>Select your country</option>
+                <option>India</option>
+                <option>United States</option>
+                <option>Italy</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Sri Lanka</option>
+                <option>Australia</option>
+                <option>South Africa</option>
+                <option>Zimbabwe</option>
+                <option>Germany</option>
+                <option>Ireland</option>
+                <option>Nepal</option>
+                <option>United Kingdom</option>
+                <option>Pakistan</option>
+                <option>Other</option>
+            </select>
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls1">
+            <label>Gender</label><br>
+            <input type="radio" id="male" value="male" name="gender">Male
+            <input type="radio" id="female" value="female" name="gender">Female
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls">
+            <label>Profession</label>
+            <input type="text" id="prof" placeholder="Enter your Profession" >
+            <div class="error"></div>
+        </div><br>
+        <div class="input-controls">
+            <label>Email</label>
+            <input type="text" id="mail" placeholder="Enter your Email">
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-controls">
+            <label>Mobile Number</label>
+            <input type="number" id="phone" placeholder="Enter your phone number" >
+            <div class="error">
+        </div><br>
+
+        <div id="buttons">
+            <button id="b" onclick="return (validate())">Submit</button>
+            <button id="b" onclick="return validate1()">Reset</button>
+        </div>
+    </form>
+
+
+    <script>
+        function validate()
+        {
+            var name1=document.getElementById("fname").value;
+            var name2=document.getElementById("lname").value;
+            var date=document.getElementById("date").value;
+            var country=document.getElementById("country").value;
+            var prof=document.getElementById("prof").value;
+            var email=document.getElementById("mail").value;
+            var phone=document.getElementById("phone").value;
+
+            if(name1=="")
+            {
+                alert("Enter your first name....");
+                return false;
+            }
+            if(name2=="")
+            {
+                alert("Enter your second name....");
+                return false;
+            }
+            if(date=="")
+            {
+                alert("Enter your DOB....");
+                return false;
+            }
+            if(country=="Select your country")
+            {
+                alert("Please select your country....");
+                return false;
+            }
+
+            
+            if(prof=="")
+            {
+                alert("Please enter your Profession....");
+                return false;
+            }
+            if(email=="")
+            {
+                alert("Please enter your MailID....");
+                return false;
+            }
+            if(phone=="")
+            {
+                alert("Please Enter your country....");
+                return false;
+            }
+            
+        }
+
+        function validate1()
+        {
+            document.getElementById("myform").reset();
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    background-color:rgb(143, 196, 250);
+}
+form h1{
+    text-align: center
+}
+h1{
+    color:white;
+    text-decoration: underline solid rgb(143, 196, 250);
+    
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+}
+form{
+    border: 3px solid white;
+    border-radius: 5%;
+    margin-left: 25%;
+    font-size: larger;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    padding: 20px;
+}
+form:hover{
+    border-color: white;
+    border: 3%;
+}
+
+.input-controls{
+    display: flex;
+    flex-direction: column;
+}
+.input-controls input{
+    border: 2px solid black;
+    border-radius: 7px;
+    display: block;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.input-controls input:focus{
+    outline: 0;
+}
+::placeholder{
+    font-size:15px;
+}
+#buttons
+{
+    text-align: center;
+    align-items: center;
+}
+#b:hover{
+    color:aliceblue;
+    background-color: black;
+}
+label{
+    color:rgb(252, 252, 252);
+}
